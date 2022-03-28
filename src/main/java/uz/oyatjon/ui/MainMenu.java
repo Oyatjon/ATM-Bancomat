@@ -21,7 +21,7 @@ public class MainMenu {
     }
 
     public static void main(String[] args) throws APIException {
-
+        AppConfig.initSuperUser();
         Menu.show();
         String choice = Input.getStr("?:");
         MenuKey key = MenuKey.getByValue(choice);
